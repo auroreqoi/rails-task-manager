@@ -1,0 +1,7 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p>is it done yet ? <%= @task.completed ? 'yes' : 'no' %></p>
+
+<%= link_to 'Back to all tasks', tasks_path %>
+
+<%= link_to 'Would you like to edit this task?', edit_task_path(@task) %>
